@@ -4,7 +4,7 @@
 //centering the map when it loads
 var map = L.map('map-container').setView([39.50 , -98.35], 4);
 
-var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+var layer = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png');
 
 layer.addTo(map);
 

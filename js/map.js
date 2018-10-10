@@ -6,7 +6,7 @@ $(function() {
       // Create map and set view
       var map = L.map('map-container').setView([37.697948, -98.4842], 4);
       // Create a tile layer variable using the appropriate url
-      var tileLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+      var tileLayer = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png');
       // Add the layer to your map
       tileLayer.addTo(map);
       // Execute your function to get data

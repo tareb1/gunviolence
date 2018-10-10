@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mass Shootings</title>
+
+    <!-- jQuery, materialize -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
+
+    <!-- PapaParse -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+
+    <!-- leaflet libraries -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+
+    <!-- Custom files -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header >
+      <div class="container -a">
+            <h1>Mass Shootings in the US: 2016</h1>
+      </div>
+      <div class="container" >
+      <p class="tag-line">This map shows crowdsourced mass shooting data from the nonprofit <a href="http://www.gunviolencearchive.org/reports/mass-shooting">Gun Violence Archive</a>.
+      Circle color indicates if more people were <span class="injured"><strong>injured</strong></span> or <span class="killed"><strong>killed</strong></span>. Click each point for details.</p>
+        <p>Mass shootings — a single shooting incident in which four or more people are shot — have become a sad trend. If you feel like it’s been happening every other day, you’re not far off target. As we approach year’s end, 
+            the Gun Violence Archive has logged more than 340 mass-shooting incidents in 2016 – 
+            that’s nearly one per calendar day — with a total so far of more than 400 people killed and nearly 1,400 wounded.</p>
+      </div>
+  </header>
+
+    <!-- You may want to put your title and additional informaiton here -->
+    <div class="container">
+        <!-- This is the div that your map will go in.  You'll need to reference its id -->
+        <div id="map-container"></div>
+    </div>
+    <div id="table-container"></div>
+
+    <section id="sandbox"></section>
+</body>
+
+</html>
